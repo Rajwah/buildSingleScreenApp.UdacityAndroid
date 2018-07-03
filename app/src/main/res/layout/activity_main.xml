@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rajwahalqurashi.project1udacity.MainActivity">
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".MainActivity">
+            <ImageView
+                android:id="@+id/photo"
+                android:src="@drawable/starbucks"
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:paddingTop="50dp"
+                android:scaleType="fitXY"/>
+            <ImageView
+                android:id="@+id/photo1"
+                android:src="@drawable/locationicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="20dp"
+
+                android:layout_below="@id/photo"/>
+            <ImageView
+                android:id="@+id/photo2"
+                android:src="@drawable/phoneicon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:paddingLeft="20dp"
+                android:layout_below="@id/location"/>
+
+            <TextView
+                android:text="Starbucks Cafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="36sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:paddingLeft="50dp"/>
+            <TextView
+                android:id="@+id/location"
+                android:text="An Nafal. Jarir Riyadh North Ring Road, Riyadh 13312, Saudi Arabia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_below="@id/photo"
+                android:layout_toRightOf="@id/photo1"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/darker_gray"
+                android:padding="16dp"/>
+            <TextView
+                android:id="@+id/phone"
+                android:text="+966115102229"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/location"
+                android:layout_toRightOf="@id/photo2"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/darker_gray"
+                android:padding="16dp"/>
+            <TextView
+                android:text="Seattle-based coffeehouse chain known for its signature roasts, light bites and WiFi availability."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/phone"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:textColor="@android:color/darker_gray"
+                android:padding="20dp"/>
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
